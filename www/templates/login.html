@@ -1,0 +1,25 @@
+<ion-view title="用户登录">
+  <ion-content class="padding">
+    <div class="login-title" align="center" style="padding: 20px;margin-top: 10px">
+      <h2 class="energized">百精电商</h2>
+      <img src="img/ionic.png">
+    </div>
+    <div>
+      <form novalidate="novalidate" on-valid-submit="doLogin()">
+        <label class="item item-input validated">
+          <span class="input-label icon ion-person " for="account"> 账号</span>
+          <input id="account" type="text" ng-model="user.name" placeholder="账号" required="required" name="account" />
+          <i class="icon ion-alert-circled error"></i>
+        </label>
+        <label class="item item-input validated">
+          <span class="input-label icon ion-locked " for="password"> 密码</span>
+          <input id="password" type="password" ng-model="user.password" placeholder="********" required="required" name="password" />
+          <i class="icon ion-alert-circled error"></i>
+        </label>
+        <label >
+          <button type="submit" class="button button-block button-stable icon-text">登录</button>
+        </label>
+      </form>
+    </div>
+  </ion-content>
+</ion-view>
